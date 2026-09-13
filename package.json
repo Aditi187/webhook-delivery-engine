@@ -12,7 +12,7 @@
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "dev:worker": "ts-node-dev --respawn --transpile-only src/workers/worker.boot.ts",
     "dev:mock": "ts-node-dev --respawn --transpile-only src/mock-server/server.ts",
-    "build": "tsc",
+    "build": "npx prisma generate && tsc",
     "start": "node dist/server.js",
     "start:worker": "node dist/workers/worker.boot.js",
     "prod:up": "docker-compose -f docker-compose.prod.yml up -d",

@@ -1,12 +1,13 @@
 import { Queue } from 'bullmq';
 import logger from './logger';
 
-const isProduction = process.env.NODE_ENV === 'production';
+import IORedis from 'ioredis';
+import config from '../config';
 
-export const redisConnection = {
-  host: isProduction ? 'redis' : '127.0.0.1',
-  port: isProduction ? 6379 : 6380,
-};
+export const redisConnection = new IORedis(config.redis.url, {
+  maxRetriesPerRequest: null,
+  enableReadyCheck: false,
+});
 
 export const webhookDeliveryQueue = new Queue('webhook-delivery', {
   connection: redisConnection,

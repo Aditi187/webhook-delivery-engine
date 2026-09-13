@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Zap, Copy, Check, ArrowRight } from 'lucide-react';
-import { setKey } from '../lib/api';
+import { setKey, API_BASE_URL } from '../lib/api';
 
 type Step = 'choose' | 'login' | 'register' | 'success';
 
@@ -31,7 +31,7 @@ export function Login({ onLogin }: { onLogin: () => void }) {
     setLoading(true);
     setError('');
     try {
-      const res = await fetch('/api/v1/clients/register', {
+      const res = await fetch(`${API_BASE_URL}/clients/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name: name.trim() }),
@@ -57,7 +57,7 @@ export function Login({ onLogin }: { onLogin: () => void }) {
     setLoading(true);
     setError('');
     try {
-      const res = await fetch('/api/v1/health', {
+      const res = await fetch(`${API_BASE_URL}/health`, {
         headers: { 'x-api-key': apiKeyInput.trim() },
       });
       if (res.ok) {

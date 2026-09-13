@@ -1,4 +1,5 @@
-const BASE = '/api/v1';
+export const API_BASE_URL = (import.meta.env.VITE_API_URL ? String(import.meta.env.VITE_API_URL).replace(/\/$/, '') : '') + '/api/v1';
+const BASE = API_BASE_URL;
 
 export function getKey(): string {
   return localStorage.getItem('whe_key') || '';
