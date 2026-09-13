@@ -26,12 +26,13 @@ pinned: false
 [![Redis](https://img.shields.io/badge/Redis-7-DC382D?style=flat-square&logo=redis&logoColor=white)](https://redis.io/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
 [![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
-[![Railway](https://img.shields.io/badge/Deployed-Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)](https://webhook-delivery-engine-production-4f5b.up.railway.app)
+[![Railway](https://img.shields.io/badge/API-Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)](https://webhook-delivery-engine-production-4f5b.up.railway.app/api/v1/health)
+[![Vercel](https://img.shields.io/badge/Dashboard-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)](https://webhook-delivery-engine-phi.vercel.app)
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE)
 
 <br/>
 
-**[🚀 Live API](https://webhook-delivery-engine-production-4f5b.up.railway.app/api/v1/health)** &nbsp;•&nbsp; **[📊 Live Dashboard](https://webhook-delivery-engine-production-4f5b.up.railway.app)** &nbsp;•&nbsp; **[📖 API Docs](#-api-reference)**
+**[📊 Live Dashboard](https://webhook-delivery-engine-phi.vercel.app)** &nbsp;•&nbsp; **[🚀 Live API](https://webhook-delivery-engine-production-4f5b.up.railway.app/api/v1/health)** &nbsp;•&nbsp; **[📖 API Docs](#-api-reference)**
 
 <br/>
 
